@@ -1,3 +1,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-color: rgb(0, 0, 0);
+  color: rgb(225, 225, 225);
+  text-align: center;
+}
+
+@layer components {
+  .min-container {
+    @apply w-full min-h-screen relative flex flex-col justify-center items-center p-2;
+  }
+
+  .min-title {
+    @apply text-4xl md:text-7xl font-semibold select-none uppercase;
+  }
+
+  .min-subtitle {
+    @apply text-xl md:text-3xl font-light select-none uppercase py-2;
+  }
+
+  .min-button {
+    @apply w-28 h-10 text-sm md:w-36 md:h-12 md:text-base font-semibold uppercase rounded-md bg-neutral-200 text-neutral-800 
+    my-2 hover:brightness-125 focus:bg-neutral-100 active:scale-95 duration-300 select-none;
+  }
+}
+
+/* Firefox scrollbar styling */
+* {
+  scrollbar-width: thin; /* Makes the scrollbar thinner */
+  scrollbar-color: rgb(100, 100, 100) rgb(0, 0, 0); /* Thumb color and track color */
+}
+
+/* Chrome, Safari, and Edge */
+*::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  height: 8px; /* Height of the horizontal scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0); /* Background color of the scrollbar track */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(100, 100, 100); /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(85, 85, 85); /* Darker color on hover */
+}
