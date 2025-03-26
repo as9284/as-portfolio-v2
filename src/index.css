@@ -4,10 +4,20 @@
     body {
         font-family: "Inter", "sans-serif";
     }
+
+    .btn-push {
+        box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    }
+
+    .btn-push:active {
+        box-shadow: 0px 0px 0px 0px;
+        top: 5px;
+        left: 5px;
+    }
 }
 
 @layer components {
-    .btn-modern {
-        @apply relative flex justify-center items-center text-base md:text-lg bg-white border-2 text-black font-semibold py-2 px-4 rounded-md cursor-pointer hover:bg-white/80 focus:bg-white/80 active:scale-[0.98] duration-200;
+    .btn-push {
+        @apply relative p-3 text-sm md:text-lg bg-black border-[3px] border-white text-white tracking-widest cursor-pointer uppercase;
     }
 }

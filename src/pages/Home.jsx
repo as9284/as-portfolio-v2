@@ -49,20 +49,20 @@ export const Home = () => {
           Portfolio
         </h5>
         <hr className="w-60 md:w-96 border-1 my-4" />
-        <button className="btn-modern">Featured Projects</button>
+        <button className="btn-push">Featured Projects</button>
       </div>
 
       {/* Tech Stack Section */}
       <div className="w-full flex flex-col justify-center items-center z-10">
-        <h3 className="text-lg md:text-2xl font-semibold">Tech I Use</h3>
-        <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8 text-4xl py-4">
+        <h3 className="text-base md:text-2xl font-semibold">Tech I Use</h3>
+        <div className="flex flex-wrap justify-center items-center gap-4 md:gap-12 text-4xl py-4">
           {techStack.map((tech, index) => (
             <img
               key={index}
               src={tech.src}
               alt={tech.alt}
-              className={`w-8 md:w-12 ${
-                tech.alt === "Figma logo" ? "h-8 md:h-12" : ""
+              className={`w-6 md:w-12 ${
+                tech.alt === "Figma logo" ? "h-6 md:h-12" : ""
               }`}
             />
           ))}
