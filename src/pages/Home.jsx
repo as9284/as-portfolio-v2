@@ -54,15 +54,15 @@ export const Home = () => {
 
       {/* Tech Stack Section */}
       <div className="w-full flex flex-col justify-center items-center z-10">
-        <h3 className="text-base md:text-2xl font-semibold">Tech I Use</h3>
-        <div className="flex flex-wrap justify-center items-center gap-4 md:gap-12 text-4xl py-4">
+        <h3 className="text-base md:text-xl font-semibold">Tech I Use</h3>
+        <div className="flex flex-wrap justify-center items-center gap-4 md:gap-10 text-4xl py-4">
           {techStack.map((tech, index) => (
             <img
               key={index}
               src={tech.src}
               alt={tech.alt}
-              className={`w-6 md:w-12 ${
-                tech.alt === "Figma logo" ? "h-6 md:h-12" : ""
+              className={`w-6 md:w-10 ${
+                tech.alt === "Figma logo" ? "h-6 md:h-10" : ""
               }`}
             />
           ))}
