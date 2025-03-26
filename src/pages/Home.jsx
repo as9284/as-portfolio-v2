@@ -32,8 +32,8 @@ export const Home = () => {
         className="absolute inset-0 w-full h-full z-0"
       />
       <div className="absolute w-full top-0 right-0 flex justify-between items-center p-4">
-        <h3 className="text-xl md:text-3xl font-semibold">Anthony Saliba</h3>
-        <div className="flex gap-4 md:gap-8 text-2xl md:text-3xl">
+        <h3 className="text-2xl md:text-3xl font-semibold">Anthony Saliba</h3>
+        <div className="flex gap-4 md:gap-8 text-3xl">
           <FaLinkedin className="cursor-pointer" />
           <FaGithub className="cursor-pointer" />
           <MdEmail className="cursor-pointer" />
@@ -41,7 +41,7 @@ export const Home = () => {
       </div>
 
       <div className="w-full flex flex-col justify-center items-center z-10">
-        <h1 className="text-2xl md:text-5xl font-bold">Frontend Developer</h1>
+        <h1 className="text-3xl md:text-5xl font-bold">Frontend Developer</h1>
         <h5 className="text-base md:text-xl font-semibold uppercase">
           Portfolio
         </h5>
