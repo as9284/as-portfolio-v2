@@ -27,13 +27,29 @@ export const Projects = () => {
 
   useEffect(() => {
     if (selectedProject) {
-      const timer = setTimeout(() => {
-        setShowContent(true);
+      setShowContent(false);
+
+      const img = new Image();
+      img.src = images[selectedProject.src.split(".")[0]];
+
+      let imageLoaded = false;
+
+      img.onload = () => {
+        imageLoaded = true;
+      };
+
+      const minDelay = setTimeout(() => {
+        if (imageLoaded) {
+          setShowContent(true);
+        } else {
+          img.onload = () => setShowContent(true);
+        }
       }, 1000);
 
-      return () => clearTimeout(timer);
-    } else {
-      setShowContent(false);
+      return () => {
+        clearTimeout(minDelay);
+        img.onload = null;
+      };
     }
   }, [selectedProject]);
 
