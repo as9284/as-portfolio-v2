@@ -92,7 +92,7 @@ export const Projects = () => {
                 {/* Project Details */}
                 {!isFullscreen && (
                   <>
-                    <h2 className="text-2xl md:text-3xl font-bold">
+                    <h2 className="text-2xl md:text-4xl font-bold">
                       {selectedProject.title}
                     </h2>
                     <p className="text-base md:text-xl pt-2 px-4">
