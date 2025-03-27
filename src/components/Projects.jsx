@@ -26,7 +26,7 @@ export const Projects = () => {
       {projectsData.map((project) => (
         <div
           key={project.id}
-          className="w-72 h-60 bg-black border-2 border-white flex flex-col justify-center items-center gap-4"
+          className="w-72 h-72 bg-black border-2 border-white flex flex-col justify-center items-center gap-4"
         >
           <h4 className="text-xl font-bold">{project.title}</h4>
           <button
