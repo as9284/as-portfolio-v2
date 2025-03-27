@@ -23,6 +23,7 @@ const images = {
 export const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [showContent, setShowContent] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
 
   useEffect(() => {
     if (selectedProject) {
@@ -62,7 +63,7 @@ export const Projects = () => {
       {/* Modal Popup */}
       {selectedProject && (
         <div className="fixed inset-0 flex items-center justify-center bg-black/40 backdrop-blur-md z-50 p-2">
-          <div className="relative w-full md:w-3/4 lg:w-1/2 h-[80%] md:h-[90%] bg-black border-2 border-white text-white flex flex-col justify-between items-center">
+          <div className="relative w-full md:w-3/4 lg:w-3/5 h-[90%] md:h-[100%] bg-black border-2 border-white text-white flex flex-col justify-between items-center">
             {!showContent ? (
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 <Square
@@ -80,47 +81,54 @@ export const Projects = () => {
                 <img
                   src={images[selectedProject.src.split(".")[0]]}
                   alt={selectedProject.title}
-                  className="w-full object-contain mb-4"
+                  className={`cursor-pointer ${
+                    isFullscreen
+                      ? "fixed inset-0 w-full h-full object-contain bg-black z-50"
+                      : "w-full object-contain mb-4"
+                  }`}
+                  onClick={() => setIsFullscreen(!isFullscreen)}
                 />
 
                 {/* Project Details */}
-                <h2 className="text-2xl md:text-3xl font-bold">
-                  {selectedProject.title}
-                </h2>
-                <p className="text-base md:text-xl pt-2 px-4">
-                  {selectedProject.description}
-                </p>
+                {!isFullscreen && (
+                  <>
+                    <h2 className="text-2xl md:text-3xl font-bold">
+                      {selectedProject.title}
+                    </h2>
+                    <p className="text-base md:text-xl pt-2 px-4">
+                      {selectedProject.description}
+                    </p>
 
-                {/* Buttons */}
-                <div className="w-full flex flex-col md:flex-row justify-center items-center gap-4 my-6">
-                  {selectedProject.title === "Wirestorm Networks" ? (
-                    <>
-                      <button
-                        className="btn-push"
-                        onClick={() => setSelectedProject(null)}
-                      >
-                        Close
-                      </button>
-                    </>
-                  ) : (
-                    <>
-                      <button
-                        className="btn-push"
-                        onClick={() =>
-                          window.open(selectedProject.github, "_blank")
-                        }
-                      >
-                        Github
-                      </button>
-                      <button
-                        className="btn-push"
-                        onClick={() => setSelectedProject(null)}
-                      >
-                        Close
-                      </button>
-                    </>
-                  )}
-                </div>
+                    {/* Buttons */}
+                    <div className="w-full flex flex-wrap justify-center items-center gap-4 my-6">
+                      {selectedProject.title === "Wirestorm Networks" ? (
+                        <button
+                          className="btn-push"
+                          onClick={() => setSelectedProject(null)}
+                        >
+                          Close
+                        </button>
+                      ) : (
+                        <>
+                          <button
+                            className="btn-push"
+                            onClick={() =>
+                              window.open(selectedProject.github, "_blank")
+                            }
+                          >
+                            Github
+                          </button>
+                          <button
+                            className="btn-push"
+                            onClick={() => setSelectedProject(null)}
+                          >
+                            Close
+                          </button>
+                        </>
+                      )}
+                    </div>
+                  </>
+                )}
               </>
             )}
           </div>
