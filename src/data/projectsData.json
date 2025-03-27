@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Wirestorm Networks",
+    "description": "Wirestorm Networks delivers advanced cloud solutions, DevOps services, software and hardware development, IoT, machine learning, and consultancy.",
+    "src": "wirestorm.webp",
+    "preview": "https://www.wirestorm.software/"
+  },
+  {
+    "id": 2,
+    "title": "Memoir",
+    "description": "A minimalistic yet feature-rich note-taking app that ensures secure data storage and easy access to notes anytime, anywhere.",
+    "src": "memoir.webp",
+    "preview": "https://memoir-eight.vercel.app/"
+  },
+  {
+    "id": 3,
+    "title": "Sky Cloud",
+    "description": "A sleek, sharp and intuitive cloud storage service designed for effortless file management, offering a seamless and visually refined user experience.",
+    "src": "cloud.webp",
+    "preview": "https://sky-cloud.vercel.app/"
+  },
+  {
+    "id": 4,
+    "title": "Holo Movies",
+    "description": "A modern movie discovery platform that allows users to explore films and access detailed information about them.",
+    "src": "movies.webp",
+    "preview": "https://holo-movies.vercel.app/"
+  },
+  {
+    "id": 5,
+    "title": "Space Rise",
+    "description": "A dynamic web app that keeps users up to date with the latest spaceflight news, delivering timely and relevant information in an engaging format.",
+    "src": "space.webp",
+    "preview": "https://space-rise.vercel.app/"
+  },
+  {
+    "id": 6,
+    "title": "Clean Link",
+    "description": "A fast and reliable URL shortener that simplifies long links, making them cleaner and more shareable in just a few clicks.",
+    "src": "link.webp",
+    "preview": "https://clean-link.vercel.app/"
+  }
+]
