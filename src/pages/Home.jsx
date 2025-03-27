@@ -25,7 +25,7 @@ export const Home = () => {
 
       <div
         id="projects-section"
-        className="relative w-full min-h-dvh bg-black text-white flex flex-col justify-between p-4 text-center select-none overflow-auto"
+        className="relative w-full min-h-screen bg-black text-white flex flex-col justify-between p-4 text-center select-none overflow-auto"
       >
         <div
           style={{
