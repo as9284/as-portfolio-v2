@@ -3,6 +3,7 @@
 @layer base {
     body {
         font-family: "Inter", "sans-serif";
+        background-color: black;
     }
 
     .btn-push {
@@ -18,6 +19,6 @@
 
 @layer components {
     .btn-push {
-        @apply relative p-3 text-sm md:text-lg bg-black border-[3px] border-white text-white tracking-widest cursor-pointer uppercase;
+        @apply relative min-w-52 min-h-14 md:min-w-60 md:h-16 text-sm md:text-lg bg-black border-[3px] border-white text-white tracking-widest cursor-pointer uppercase;
     }
 }

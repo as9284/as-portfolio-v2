@@ -2,6 +2,7 @@ import React from "react";
 import { Header } from "../components/Header";
 import { Hero } from "../components/Hero";
 import { Tech } from "../components/Tech";
+import { Projects } from "../components/Projects";
 
 export const Home = () => {
   return (
@@ -25,7 +26,7 @@ export const Home = () => {
 
       <div
         id="projects-section"
-        className="relative w-full min-h-screen bg-black text-white flex flex-col justify-between p-4 text-center select-none overflow-auto"
+        className="relative w-full min-h-screen bg-black text-white flex flex-col items-center justify-center p-4 text-center select-none overflow-auto"
       >
         <div
           style={{
@@ -38,6 +39,7 @@ export const Home = () => {
           }}
           className="absolute inset-0 w-full h-full z-0"
         />
+        <Projects />
       </div>
     </>
   );

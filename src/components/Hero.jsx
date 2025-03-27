@@ -11,7 +11,7 @@ export const Hero = () => {
             Portfolio
           </h5>
           <hr className="w-full border-1 my-4" />
-          <Link to="projects-section" smooth={true} duration={400}>
+          <Link to="projects-section" smooth={true} duration={200}>
             <button className="btn-push">Featured Projects</button>
           </Link>
         </div>
