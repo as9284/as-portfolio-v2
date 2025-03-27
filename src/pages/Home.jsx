@@ -6,7 +6,7 @@ import { Tech } from "../components/Tech";
 export const Home = () => {
   return (
     <>
-      <div className="relative w-full min-h-screen bg-black text-white flex flex-col justify-between p-4 text-center select-none overflow-auto">
+      <div className="relative w-full min-h-dvh bg-black text-white flex flex-col justify-between p-4 text-center select-none overflow-auto">
         <div
           style={{
             backgroundColor: "#000000",
