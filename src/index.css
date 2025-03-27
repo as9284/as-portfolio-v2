@@ -14,10 +14,6 @@
         top: 5px;
         left: 5px;
     }
-
-    .box {
-        box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px;
-    }
 }
 
 @layer components {
