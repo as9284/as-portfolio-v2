@@ -78,8 +78,14 @@ export const Projects = () => {
 
       {/* Modal Popup */}
       {selectedProject && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black/40 backdrop-blur-md z-50 p-2">
-          <div className="relative w-full md:w-3/4 lg:w-3/5 min-h-[60%] md:min-h-[90%] bg-black border-2 border-white text-white flex flex-col justify-between items-center">
+        <div
+          className="fixed inset-0 flex items-center justify-center bg-black/40 backdrop-blur-md z-50 p-2"
+          onClick={() => setSelectedProject(null)}
+        >
+          <div
+            className="relative w-full md:w-3/4 lg:w-3/5 min-h-[60%] md:min-h-[90%] bg-black border-2 border-white text-white flex flex-col justify-between items-center"
+            onClick={(e) => e.stopPropagation()}
+          >
             {!showContent ? (
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 <Square
