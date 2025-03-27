@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 export const Hero = () => {
   return (
@@ -10,7 +11,9 @@ export const Hero = () => {
             Portfolio
           </h5>
           <hr className="w-full border-1 my-4" />
-          <button className="btn-push">Featured Projects</button>
+          <Link to="projects-section" smooth={true} duration={500}>
+            <button className="btn-push">Featured Projects</button>
+          </Link>
         </div>
       </div>
     </>
