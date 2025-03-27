@@ -4,6 +4,7 @@
     "title": "Wirestorm Networks",
     "description": "Wirestorm Networks delivers advanced cloud solutions, DevOps services, software and hardware development, IoT, machine learning, and consultancy.",
     "src": "wirestorm.webp",
+    "github": "",
     "preview": "https://www.wirestorm.software/"
   },
   {
@@ -11,6 +12,7 @@
     "title": "Memoir",
     "description": "A minimalistic yet feature-rich note-taking app that ensures secure data storage and easy access to notes anytime, anywhere.",
     "src": "memoir.webp",
+    "github": "https://github.com/as9284/memoir",
     "preview": "https://memoir-eight.vercel.app/"
   },
   {
@@ -18,6 +20,7 @@
     "title": "Sky Cloud",
     "description": "A sleek, sharp and intuitive cloud storage service designed for effortless file management, offering a seamless and visually refined user experience.",
     "src": "cloud.webp",
+    "github": "https://github.com/as9284/sky-cloud",
     "preview": "https://sky-cloud.vercel.app/"
   },
   {
@@ -25,6 +28,7 @@
     "title": "Holo Movies",
     "description": "A modern movie discovery platform that allows users to explore films and access detailed information about them.",
     "src": "movies.webp",
+    "github": "https://github.com/as9284/holo-movies",
     "preview": "https://holo-movies.vercel.app/"
   },
   {
@@ -32,6 +36,7 @@
     "title": "Space Rise",
     "description": "A dynamic web app that keeps users up to date with the latest spaceflight news, delivering timely and relevant information in an engaging format.",
     "src": "space.webp",
+    "github": "https://github.com/as9284/space-rise",
     "preview": "https://space-rise.vercel.app/"
   },
   {
@@ -39,6 +44,7 @@
     "title": "Clean Link",
     "description": "A fast and reliable URL shortener that simplifies long links, making them cleaner and more shareable in just a few clicks.",
     "src": "link.webp",
+    "github": "https://github.com/as9284/clean-link",
     "preview": "https://clean-link.vercel.app/"
   }
 ]
