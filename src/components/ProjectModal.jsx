@@ -25,12 +25,14 @@ export const ProjectModal = ({ project, onClose, images }) => {
         } else {
           img.onload = () => setShowContent(true);
         }
-      }, 1000);
+      }, 500);
 
       return () => {
         clearTimeout(minDelay);
         img.onload = null;
       };
+    } else {
+      setShowContent(false);
     }
   }, [project]);
 
