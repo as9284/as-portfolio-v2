@@ -17,17 +17,17 @@ export const Header = () => {
         <h3 className="text-xl md:text-3xl font-semibold">Anthony Saliba</h3>
         <div className="flex gap-4 md:gap-8 text-2xl md:text-3xl">
           <FaLinkedin
-            className="cursor-pointer"
+            className="cursor-pointer active:scale-90"
             onClick={() =>
               openLink("https://www.linkedin.com/in/anthony-saliba-5205311b5")
             }
           />
           <FaGithub
-            className="cursor-pointer"
+            className="cursor-pointer active:scale-90"
             onClick={() => openLink("https://github.com/as9284")}
           />
           <MdEmail
-            className="cursor-pointer"
+            className="cursor-pointer active:scale-90"
             onClick={() => mailToEmail("anthonys68892@gmail.com")}
           />
         </div>
