@@ -22,7 +22,7 @@ export const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
-    <div className="w-full place-items-center justify-items-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 z-10">
+    <div className="w-full place-items-center justify-items-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 z-50">
       {projectsData.map((project) => (
         <div
           key={project.id}
