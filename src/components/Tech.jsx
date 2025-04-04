@@ -7,6 +7,7 @@ const techStack = [
   { src: images["../assets/svg/css3.png"].default, alt: "CSS3 logo" },
   { src: images["../assets/svg/js.png"].default, alt: "JavaScript logo" },
   { src: images["../assets/svg/node.svg"].default, alt: "Node.js logo" },
+  { src: images["../assets/svg/nextjs.svg"].default, alt: "Next.js logo" },
   { src: images["../assets/svg/react.png"].default, alt: "React.js logo" },
   {
     src: images["../assets/svg/tailwind.png"].default,
