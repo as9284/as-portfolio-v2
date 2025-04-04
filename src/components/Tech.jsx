@@ -4,13 +4,13 @@ const images = import.meta.glob("../assets/svg/*", { eager: true });
 
 const techStack = [
   { src: images["../assets/svg/html5.svg"].default, alt: "HTML5 logo" },
-  { src: images["../assets/svg/css3.png"].default, alt: "CSS3 logo" },
-  { src: images["../assets/svg/js.png"].default, alt: "JavaScript logo" },
+  { src: images["../assets/svg/css3.svg"].default, alt: "CSS3 logo" },
+  { src: images["../assets/svg/js.svg"].default, alt: "JavaScript logo" },
   { src: images["../assets/svg/node.svg"].default, alt: "Node.js logo" },
   { src: images["../assets/svg/nextjs.svg"].default, alt: "Next.js logo" },
-  { src: images["../assets/svg/react.png"].default, alt: "React.js logo" },
+  { src: images["../assets/svg/react.svg"].default, alt: "React.js logo" },
   {
-    src: images["../assets/svg/tailwind.png"].default,
+    src: images["../assets/svg/tailwind.svg"].default,
     alt: "Tailwind CSS logo",
   },
   { src: images["../assets/svg/figma.svg"].default, alt: "Figma logo" },
