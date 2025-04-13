@@ -24,9 +24,9 @@ const techStack = [
     name: "Node.js",
   },
   {
-    src: images["../assets/svg/nextjs.svg"].default,
-    alt: "Next.js logo",
-    name: "Next.js",
+    src: images["../assets/svg/flutter.svg"].default,
+    alt: "Flutter logo",
+    name: "Flutter",
   },
   {
     src: images["../assets/svg/react.svg"].default,
